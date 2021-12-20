@@ -1,0 +1,95 @@
+.main-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+}
+
+.main-header img {
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Nội dung chính */
+.container {
+    background-color: #ffc837;
+    padding: 50px 120px 100px 80px;
+}
+
+.container h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+.container p {
+    justify-content: justify;
+}
+
+.container p:nth-child(3) {
+    text-align: center;
+}
+
+/* Form ứng tuyển */
+.frm-apply {
+    width: 500px;
+    margin: 80px auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.frm-apply h3 {
+    text-align: center;
+}
+
+.frm-apply input[type=text], input[type=number], input[type=file], select, .uploadcv {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.red {
+    color: red;
+}
+
+.uploadcv {
+    text-align: center;
+}
+
+.uploadcv input {
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 101;
+    opacity: 0;
+}
+
+.uploadcv .more {
+    font-size: 13px;
+    font-weight: 300;
+    color: #999;
+    padding-top: 4px;
+}
+  
+.applysubmit input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 30px 0 0 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.applysubmit input[type=submit]:hover {
+    background-color: #45a049;
+}
+  

@@ -1,0 +1,144 @@
+.container {
+    max-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.search-container a {
+    color: #000;
+}
+.bill-product {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.bill-product img {
+    object-fit: cover;
+    width: 140px;
+    height: 80px;
+}
+.bill-product h4 {
+    width: 300px;  
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+.bill-quantily input{
+    width: 40px;
+}
+.table td, .table th {
+    vertical-align: middle;
+}
+.fas {
+    color: inherit;
+}
+.remove-all-product,
+.remove-product {
+    color: #ff9800;
+}
+.remove-all-product:hover,
+.remove-product:hover {
+    color: var(--primary-color);
+    background-color: #eee;
+}
+.remove-all-product:active,
+.remove-product:active {
+    color: var(--primary-color);
+    
+    background-color: transparent;
+}
+.empty-bill {
+    text-align: center;
+    padding: 20px 0;
+    color: #aaa;
+}
+.empty-bill h4 {
+    padding: 20px;
+}
+.empty-bill a {
+    background-color: var(--second-color);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+}
+.empty-bill a:hover {
+    border: 1px solid var(--second-color);
+}
+.empty-bill a:active {
+    background-color: transparent;
+    color: var(--second-color);
+}
+.pay-button a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    color: #fff;
+    transition: all .2s ease;
+}
+.pay-button a:hover {
+    background-color: transparent;
+}
+.pay-button a:active {
+    transform: scale(90%);
+}
+.return-donhang a:hover {
+    color: var(--second-color);
+}
+.return-donhang a {
+    background-color: var(--second-color);
+    border: 1px solid var(--second-color);
+}
+.pay-bill a:hover {
+    color: var(--primary-color);
+}
+.pay-bill a {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.toast-message {
+    display: flex;
+    padding: 20px;
+    margin: 5px 0;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--second-color);
+    border-right: 8px solid var(--second-color);
+    border-radius: 100px 0 0 100px;
+    background-color: #fff;
+    width: 350px;
+    animation: toast-message-in .4s ease, toast-message-out 1s ease 3s forwards;
+}
+.toast-message .fa-check-circle {
+    color: var(--second-color);
+}
+.toast-message--other {
+    border: 1px solid var(--primary-color);
+    border-right: 8px solid var(--primary-color);
+}
+.toast-message--other .fa-check-circle {
+    color: var(--primary-color);
+}
+@keyframes toast-message-in {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
+@keyframes toast-message-out {
+    100% {
+        opacity: 0;
+    }
+}

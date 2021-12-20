@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển Dụng</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./IMG/logo.ico">
+    <!-- GG Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Roboto+Slab:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <!-- CSS We code -->
+    <link rel="stylesheet" type="text/css" href="./CSS/tuyendung.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/base.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/main.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/602456e303.js" crossorigin="anonymous"></script>  
+</head>
+<body class="parallax preloading">
+    <div class="preloader">
+	    <img src="./IMG/loader.gif">
+    </div>
+    <header>
+        <div class="ctn">
+            <a id="top" href="trangchu.html"><img class="logo" src="./IMG/logo.png" alt="logo"></a>
+            <nav class="nav-bar">
+                <a class="nav-link" href="trangchu.html">Trang chủ</a>
+                <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
+                <a class="nav-link" href="thucdon.html">Thực đơn</a>
+                <a class="nav-link" href="tintuc.html">Tin tức</a>
+                <a class="nav-link" href="tuyendung.html">Tuyển dụng</a>
+                <a class="nav-link" href="lienhe.html">Liên hệ</a>
+            </nav>
+            <img id="order-now-img" width="250px" src="./IMG/delivery.png">
+            <div class="search-container">
+                <form method="GET" action="timkiem.html" onsubmit="return frmValidate5(this);">
+                    <!-- <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="search"> -->
+                    <a href="#" class="sc-btn"><i class="header-fas fas fa-search"></i></a>
+                    <a href="#" class="sc-btn"><i class="header-fas fas fa-user"></i></i></a>
+                    <a href="giohang.html" class="sc-btn"><i class="header-fas fas fa-shopping-cart"></i></a>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-header">
+            <img src="./IMG/tuyendung/tuyendungbg.png">
+        </div>
+        <div class="container">
+            <h2>HÃY GIA NHẬP ĐẠI GIA ĐÌNH FUN FOOD</h2>
+            <p>
+                Fun Food là nơi hội tụ những con người nhiệt huyết và sáng tạo. 
+                Chúng mình luôn xem trọng tinh thần tập thể, xem công việc là niềm vui và cố gắng làm việc với tất cả tình yêu thương.
+                Từ đó tạo nên một môi trường tràn ngập tiếng cười, sự tôn trọng và cùng nhau phát triển.
+                Khi làm việc tại Fun Food, chúng mình cam kết bạn sẽ nhận được mức lương ổn áp. 
+                Thưởng khi đạt doanh thu theo tháng, lương tháng 13. 12 ngày nghỉ phép trong năm.
+                Đặc biệt bạn còn có cơ hội học hỏi, tham gia các khóa huấn luyện nội bộ, 
+                cơ hội phát triển nghề nghiệp và có khả năng thăng tiến nhanh đến vị trí quản lý cấp cao. 
+            </p>
+            <p>
+                Hãy nắm bắt ngay cơ hội để tạo dựng cho mình nghề nghiệp vững chắc tại Fun Food nhé!
+            </p>
+            <div class="frm-apply">
+                <h3>ĐƠN XIN VIỆC</h3>
+                <form name="frmApply" method="GET" enctype="application/x-www-form-urlencoded"  onsubmit="return frmTest(this);">
+                    <label for="name">Tên đầy đủ <span class="red">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Tên của bạn" required>
+
+                    <label for="email">Email <span class="red">*</span></label>
+                    <input type="text" id="email" name="email" placeholder="Email" required>
+
+                    <label for="phone">Số điện thoại <span class="red">*</span></label>
+                    <input type="number" id="phone" name="phone" placeholder="Số điện thoại của bạn" required>
+
+                    <label for="country">Chọn tỉnh thành làm việc <span class="red">*</span></label>
+                    <select id="country" name="country" onchange="chooseWorkPlace(this.id, 'workplace')">
+                        <option value="">-- Chọn tỉnh thành --</option>
+                        <option value="hn">Hà Nội</option>
+                        <option value="hp">Hải Phòng</option>
+                        <option value="dn">Đà Nẵng</option>
+                        <option value="tn">Thái Nguyên</option>
+                        <option value="kh">Khánh Hòa</option>
+                        <option value="bt">Bình Thuận</option>
+                        <option value="hcm">TP. Hồ Chí Minh</option>
+                        <option value="ct">Cần Thơ</option>
+                    </select>
+
+                    <label for="workplace">Chọn nơi ứng tuyển <span class="red">*</span></label>
+                    <select id="workplace" name="workplace" required></select>
+
+                    <label for="uploadcv">CV của bạn <span class="red">*</span></label>
+                    <div class="uploadcv">
+                        <input type="file" name="file" 
+                            accept="application/msword, 
+                            application/vnd.openxmlformats-officedocument.wordprocessingml.document, 
+                            application/vnd.openxmlformats-officedocument.presentationml.presentation, 
+                            application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, 
+                            application/vnd.ms-excel, application/vnd.ms-powerpoint,
+                            text/plain, application/pdf, image/*"
+                            required
+                        >								
+                        <div class="more">
+                            Nhấp để chọn &amp; tải lên CV của bạn
+                        </div>
+                    </div>
+
+                    <div class="applysubmit">
+                        <input type="submit" value="Gửi">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="ctn">
+            <div class="footer">
+                <div class="footer__left">
+                    <ul>
+                        <li><a href="#!"><p>Trang Chủ</p></a></li>
+                        <li><a href="#!"><p>Giới Thiệu</p></a></li>
+                        <li><a href="#!"><p>Thực Đơn</p></a></li>
+                        <li><a href="#!"><p>Tin Tức</p></a></li>
+                        <li><a href="#!"><p>Tuyển Dụng</p></a></li>
+                        <li><a href="#!"><p>Liên Hệ</p></a></li>
+                        <li><a href="#!"><p>Giải Quyết Khiếu Nại</p></a></li>
+                        <li><a href="#!"><p>Bảo Mật Thông Tin</p></a></li>
+                    </ul>
+                </div>
+                <div class="footer__center">
+                    <img src="./IMG/logo.png" alt="Logo" width="250px" style="margin: -40px 0;">
+                    <p>© 2021 Fun Food</p>
+                    <div class="socical-icon">
+                        <a href="#!"><img src="./IMG/fb.png" alt=""></a>
+                        <a href="#!"><img src="./IMG/intar.png" alt=""></a>
+                        <a href="#!"><img src="./IMG/tw.png" alt=""></a>
+                        <a href="#!"><img src="./IMG/linker.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <ul>
+                        <li><p>Địa Chỉ Nhà Hàng</p></li>
+                        <li><p>Nhà hàng Fun Food lầu G,</p></li>
+                        <li><p>Tòa nhà Jabes 1, số 123</p></li>
+                        <li><p>đường 3 tháng 2, Cần Thơ</p></li>
+                        <li><p>Giấy CN ĐKDN số 2323232</p></li>
+                        <li><p>do sở kế hoạch và đầu tư Cần Thơ</p></li>
+                        <li><p>cấp 1/1/2021</p></li>
+                        <li><p>Email: info@funfood.vn</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/tuyendung.js"></script>
+</body>
+</html>

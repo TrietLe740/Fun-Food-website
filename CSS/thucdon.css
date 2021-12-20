@@ -1,0 +1,267 @@
+body {
+    position: relative;
+    max-width: none;
+    background-repeat: repeat;
+    background-size: 150% auto;
+    background-position-y: -1px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.search-container a {
+    color: #000;
+}
+main {
+    margin-top: 0;
+}
+h1 {
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0;
+}
+.col-lg {
+    margin: 10px 0;
+}
+.category {
+    padding: 20px 0;
+    border: 1px solid #ccc;
+}
+.section {
+    margin: 20px 0;
+}
+.section-title {
+    background-color: var(--second-color);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px #ccc;
+}
+.section .row>.row {
+    margin: 10px 0;
+}
+.popular-food {
+    margin-bottom: 40px;
+}
+.card {
+    max-width: 400px;
+    min-width: 300px;
+    border-radius: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 15px #bbb;
+    overflow: hidden;
+    padding-bottom: 15px;
+    border: none;
+    margin: 0 auto;
+    transition: all .2s ease;
+}
+.card:hover {
+    transform: scale(105%);
+    box-shadow: 6px 6px 15px #bbb;
+}
+.card:hover img {
+    filter: opacity(90%);
+}
+.card img {
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+.card-body {
+    padding: 15px 15px 0;
+    font-size: 16px;
+}
+.card-title {
+    text-align: center;
+    font-size: 30px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+.card-text {
+    color: #777;
+}
+.card-text.show .collapse {
+    display: block;
+}
+.card .btn-check:focus, 
+.card .btn-primary:hover,
+.card .btn-primary:focus {
+    color: #fff;
+    background-color: #ccc;
+    border-color: #ccc;
+    box-shadow: none;
+}
+.fas {
+    color: inherit;
+}
+.card-text .fas {
+    transform: rotate(0deg);
+    transition: transform .5s ease;
+}
+.card-text .rotate-180 .fas{
+    transform: rotate(180deg);
+}
+.card-price {
+    font-size: 32px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+}
+.card-price span {
+    font-size: 28px;
+    font-weight: 400;
+}
+.card-price del {
+    color: #aaa;
+}
+.card-more-btn {
+    color: #aaa;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+.card .button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card .button-group button {
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 8px;
+    transition: all .2s ease;
+}
+.card .button-group button:active {
+    transform: scale(90%);
+}
+.card .button-group button:first-child{
+    background-color: var(--second-color);
+    border: 1px solid var(--second-color);
+}
+.card .button-group button:last-child {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.card .button-group button:first-child:hover {
+    color: var(--second-color);
+    background-color: #00d15e26;
+}
+.card .button-group button:last-child:hover {
+    color: var(--primary-color);
+    background-color: #ffc83726;
+}
+
+.slick-arrow {
+    position: absolute;
+    bottom: -50px;
+    background-color: var(--primary-color);
+    width: 40px;
+    padding: 10px;
+    height: 40px;
+    line-height: 1.1;
+    text-align: center;
+    border-radius: 150px;
+    z-index: 99;
+    transition: all .1s ease;
+}
+.slick-arrow:hover {
+    background-color: #ffc63775;
+    color: #fff
+}
+.slick-arrow:first-child {
+    right: calc( 50% + 10px);
+}
+.slick-arrow:last-child{
+    left: calc( 50% + 10px);
+}
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.toast-message {
+    display: flex;
+    padding: 20px;
+    margin: 5px 0;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--second-color);
+    border-right: 8px solid var(--second-color);
+    border-radius: 100px 0 0 100px;
+    background-color: #fff;
+    width: 350px;
+    animation: toast-message-in .4s ease, toast-message-out 1s ease 3s forwards;
+}
+.toast-message .fa-check-circle {
+    color: var(--second-color);
+}
+.toast-message--other {
+    border: 1px solid var(--primary-color);
+    border-right: 8px solid var(--primary-color);
+}
+.toast-message--other .fa-check-circle {
+    color: var(--primary-color);
+}
+@keyframes toast-message-in {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
+@keyframes toast-message-out {
+    100% {
+        opacity: 0;
+    }
+}
+.slick-list {
+    padding: 15px 0;
+}
+.modal-dialog {
+    min-width: 1000px;
+}
+.modal-body {
+    display: flex;
+    gap: 40px;
+}
+.modal-body img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+}
+.modal-body .card-title {
+    width: 600px;
+}
+.modal-quantily {
+    margin: 10px;
+}
+.modal-quantily button{
+    background-color: #fff;
+}
+.modal-quantily input{
+    width: 50px;
+}
+.modal-group-button button {
+    padding: 15px;
+    width: 80px;
+    outline: none;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+.modal-group-button button:hover {
+    background-color: #f5f5f5!important;
+    color: #000;
+}
+.modal-group-button button:last-child {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}

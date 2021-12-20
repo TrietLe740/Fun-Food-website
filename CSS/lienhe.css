@@ -1,0 +1,50 @@
+body {
+    position: relative;
+    max-width: none;
+    background-repeat: repeat;
+    background-size: 150% auto;
+    background-position-y: -1px;
+}
+.search-container a {
+    color: #000;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.section-title {
+    width: 100%;
+    background-color: var(--second-color);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px #ccc;
+    margin: 0;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ff9800;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #ff99003d;
+}
+.fas {
+    color: inherit;
+}
+.detail {
+    display: flex;
+    flex-direction: column;
+}
+.detail img {
+    align-self: center;
+}
+.detail section {
+    font-size: 20px;
+}
+.detail section span {
+    font-size: 30px;
+    color: var(--primary-font-color);
+    padding: 0 10px;
+}

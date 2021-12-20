@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #ffc837; 
+    --second-color: #00d15e; 
+    --border-color: #1e1d23;
+    --primary-font-color: #fd8d03;
+    --second-font-color: #009F75;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.ctn {
+    width: 1200px;
+    margin: 0 auto;
+}
+.border-img {
+    border: 2px solid var(--primary-font-color);
+    border-radius: 15px;
+}
+ul,li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

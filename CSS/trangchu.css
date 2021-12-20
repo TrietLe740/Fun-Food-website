@@ -1,0 +1,354 @@
+/* Trang chủ */
+main {
+    position: relative;
+}
+
+article.main-contain {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Phần quảng cáo chính - trang chủ*/ 
+section .special-ads-slider {
+    height: 700px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    border: 1px solid #fd8d03;
+    transition: all 0.2s linear;
+}
+
+.slick-dots .slick-active button {
+    background-color: #fd8d03;
+}
+
+/* Phần menu mini cho trang chủ */
+section.menu {
+    height: 200px;
+    background-color: white;
+}
+
+.section-title {
+    text-align: center;
+    background-color: #00d15e;
+    padding: 5px;
+}
+
+.menu-title {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.menu-list {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-cat {
+    position: relative;
+    margin: 0 25px;
+}
+
+.cat-img a img {
+    width: 100px;
+}
+
+.cat-title a {
+    color: black;
+    font-weight: bold;
+}
+
+.cat-title a:hover {
+    color: #fd8d03;
+}
+
+/* Phần Hôm nay ăn gì? */
+section .recommend {
+    background-color: white;
+}
+
+.section-title h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    margin: 0;
+}
+
+/* Bootstrap */
+body {
+    position: relative;
+    max-width: none;
+    background-repeat: repeat;
+    background-size: 150% auto;
+    background-position-y: -1px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.col-lg {
+    margin: 10px 0;
+}
+
+.category {
+    padding: 20px 0;
+    border: 1px solid #ccc;
+}
+
+.section .row>.row {
+    margin: 10px 0;
+}
+
+.card {
+    max-width: 400px;
+    min-width: 300px;
+    border-radius: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 15px #bbb;
+    overflow: hidden;
+    padding-bottom: 15px;
+    border: none;
+    margin: 0 auto;
+    transition: all .2s ease;
+}
+
+.card:hover {
+    transform: scale(105%);
+    box-shadow: 6px 6px 15px #bbb;
+}
+
+.card:hover img {
+    filter: opacity(90%);
+}
+
+.card img {
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.card-body {
+    padding: 15px 15px 0;
+    font-size: 16px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 30px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+.card-text {
+    color: #777;
+}
+
+.card-text.show .collapse {
+    display: block;
+}
+
+.card .btn-primary {
+    background-color: white;
+    border: none;
+    color: #ccc;
+}
+
+.card .btn-check:focus, 
+.card .btn-primary:hover,
+.card .btn-primary:focus {
+    color: #fff;
+    background-color: #ccc;
+    border-color: #ccc;
+    box-shadow: none;
+}
+
+.card-price {
+    font-size: 32px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.card-price span {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.card-price del {
+    color: #aaa;
+}
+
+.card-more-btn {
+    color: #aaa;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.card .button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card .button-group button {
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 8px;
+    transition: all .2s ease;
+}
+
+.card .button-group button:active {
+    transform: scale(90%);
+}
+
+.card .button-group button:first-child{
+    background-color: var(--second-color);
+    border: 1px solid var(--second-color);
+}
+
+.card .button-group button:last-child {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.card .button-group button:first-child:hover {
+    color: var(--second-color);
+    background-color: #f5f5f5;
+}
+
+.card .button-group button:last-child:hover {
+    color: var(--primary-color);
+    background-color: #f5f5f5;
+}
+
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.toast-message {
+    display: flex;
+    padding: 20px;
+    margin: 5px 0;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--second-color);
+    border-right: 8px solid var(--second-color);
+    border-radius: 100px 0 0 100px;
+    background-color: #fff;
+    width: 350px;
+    animation: toast-message-in .4s ease, toast-message-out 1s ease 3s forwards;
+}
+
+.modal-dialog {
+    min-width: 1000px;
+}
+
+.modal-body {
+    display: flex;
+    gap: 40px;
+}
+
+.modal-body img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.modal-body .card-title {
+    width: 600px;
+}
+
+.modal-quantily {
+    margin: 10px;
+}
+
+.modal-quantily button{
+    background-color: #fff;
+}
+
+.modal-quantily input{
+    width: 50px;
+}
+
+.modal-group-button button {
+    padding: 15px;
+    width: 80px;
+    outline: none;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.modal-group-button button:hover {
+    background-color: #f5f5f5!important;
+    color: #000;
+}
+
+.modal-group-button button:last-child {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* Phần Chương trình khuyến mãi */
+section.promotions {
+    background-color: white;
+    margin: 0;
+}
+
+.all-sale {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sale {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.sale img {
+    width: 300px;
+    border: black 1px solid;
+}
+
+.sale img:hover {
+    border-color: #ccc;
+    box-shadow: 0 2px 3px 0 #00000049;
+    width: 320px;
+    margin-bottom: -20px;
+}

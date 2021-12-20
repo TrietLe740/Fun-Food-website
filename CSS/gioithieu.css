@@ -1,0 +1,278 @@
+body {
+    position: relative;
+    max-width: none;
+    background-repeat: repeat;
+    background-size: 150% auto;
+    background-position-y: -1px;
+}
+main {
+    position: relative;
+}
+main img {
+    object-fit: contain;
+}
+.search-container a {
+    color: #000;
+}
+.heading {
+    height: 420px;
+    background-image: url(../IMG/gioithieu/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+.heading__title{
+    color: #fff;
+}
+.heading__title p,
+.heading__title h1 {
+    margin: 0;
+    line-height: 1;
+}
+.heading__title h1 {
+    font-size: 60px;
+}
+.heading__search {
+    width: 400px;
+}
+.heading__input {
+    position: relative;
+    margin: 20px 0px;
+}
+.heading__input .fas {
+    color:inherit;
+}
+.heading__input input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0 -4px;
+    outline: none;
+    border: none;
+}
+.heading__input button {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    color: var(--primary-font-color);
+    background-color: transparent;
+}
+.heading__input button:hover {
+    color: #fff;
+    background-color: var(--second-font-color);
+}
+.heading__categorys button {
+    color:  #fff;
+    background-color: transparent;
+    padding: 2px 10px;
+    margin: 1px;
+    border: 1px solid #fff;
+    user-select: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: color .2s ease, border .2s ease,background .2s ease;
+}
+.heading__categorys button:hover {
+    border-color: #fff;
+    color: var(--primary-font-color);
+    background-color: #fff;
+}
+section {
+    background-color: #fff;
+    opacity: 0.94;
+}
+section h1 {
+    color: #fff;
+    font-size: 30px;
+    background-color: var(--second-color);
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 0 18px;
+    box-shadow: 0 2px 5px #ccc;
+}
+.timeline{
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    box-sizing: border-box;
+}
+.timeline ul {
+    margin: 0;
+    padding: 0;
+}
+.timeline ul li{
+    line-height: normal;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    list-style: none;
+    border-bottom: 2px solid #c5c5c5;
+}
+/*Tạo đường thẳng cho mốc thời gian*/
+.timeline:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+}
+/*Sắp xếp phần tử lẻ nằm bên trái*/
+.timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    padding-right: 40px;
+    clear: both;
+}
+/*Sắp xếp phần tử chẳn nằm bên phải*/
+.timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    padding-left: 40px;
+    clear: both;
+}
+.noi_dung{
+    padding-bottom: 0;
+}
+.timeline ul li:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-20px);
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+.timeline ul li:nth-child(even):before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-20px);
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+.timeline ul li p{
+    margin: 10px 0 0;
+    padding: 0;
+    line-height: 1.2;
+    
+    color: #555;
+    font-weight: 600;
+    font-size: 18px;
+}
+.timeline ul li .thoi_gian h4{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.timeline ul li:nth-child(odd) .thoi_gian{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    right: -150px;
+    margin: 0;
+    padding: 8px 16px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px var(--primary-color);
+}
+.timeline ul li:nth-child(even) .thoi_gian{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    left: -150px;
+    margin: 0;
+    padding: 8px 16px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px var(--primary-color);
+}
+section p[class="desc"] {
+    color: #555;
+    font-weight: 600;
+    font-size: 20px;
+}
+section .time {
+    border-radius: 25px;
+    padding: 0 30px;
+    width: 40px;
+    background-color: var(--primary-color);
+}
+section .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 50px;
+}
+section .content.custom2 {
+    flex-direction: column;
+}
+section .content--2 {
+    padding-left: 40px;
+}
+section .content--2 .content {
+    padding: 20px;
+}
+section .content.custom1 {
+    position: relative;
+    padding-bottom: 50px;
+}
+section .content.custom1 img {
+    position: absolute;
+}
+section .content.custom1>div {
+    margin-left: -90px;
+}
+section .content.custom1 p:nth-child(2) {
+    padding-left: 70px;
+}
+section .content.custom1 p:nth-child(3) {
+    padding-left: 140px;
+}
+section .content.custom1 img:first-child {
+    bottom: 20px;
+    left: 29px;
+}
+section .content.custom1 img:last-child {
+    right: 8px;
+    bottom: 37px;
+}
+.slides {
+    position: relative;
+}
+.slides .slick-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    color: var(--primary-color);
+    font-size: 30px;
+    padding: 0px 10px;
+    padding: 30% 30px;
+    cursor: pointer;
+    z-index: 99;
+}
+.slides .slick-arrow:hover {
+    background-color: rgba(204, 204, 204, 0.274);
+}
+.slides .slick-left-arrow {
+    left: 0;
+}
+.slides .slick-right-arrow {
+    right: 0;
+}

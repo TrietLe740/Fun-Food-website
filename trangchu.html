@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Roboto+Slab:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./IMG/logo.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./CSS/trangchu.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./CSS/base.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/main.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/602456e303.js" crossorigin="anonymous"></script>
+    
+    <title>Trang Chủ</title>
+</head>
+<body class="parallax preloading">
+    <div class="preloader">
+	    <img src="./IMG/loader.gif">
+    </div>
+    <header>
+        <div class="ctn">
+            <a id="top" href="trangchu.html"><img class="logo" src="./IMG/logo.png" alt="logo"></a>
+            <nav class="nav-bar">
+                <a href="trangchu.html">Trang chủ</a>
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="thucdon.html">Thực đơn</a>
+                <a href="tintuc.html">Tin tức</a>
+                <a href="tuyendung.html">Tuyển dụng</a>
+                <a href="lienhe.html">Liên hệ</a>
+            </nav>
+            <img id="order-now-img" width="250px" src="./IMG/delivery.png">
+            <div class="search-container">
+                <form method="GET" action="timkiem.html" onsubmit="return frmValidate5(this);">
+                    <!-- <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="search"> -->
+                    <a href="#" class="sc-btn"><i class="header-fas fas fa-search"></i></a>
+                    <a href="#" class="sc-btn"><i class="header-fas fas fa-user"></i></i></a>
+                    <a href="giohang.html" class="sc-btn"><i class="header-fas fas fa-shopping-cart"></i></a>
+                </form>
+            </div>
+        </div>
+    </header>
+        <!-- Toast  -->
+        <div class="toast-container"></div>
+        <!-- Modal -->
+        <div class="modal fade " id="staticBackdrop"  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Đặt Món</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"></div>
+                </div>
+            </div>
+        </div>
+    <main>
+        <article class="main-contain">
+            <section class="special-ads-slider">
+                <div class="slides">
+                    <div class="slide">
+                        <a href="#"><img src="./IMG/trangchu/slide-ads1.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#"><img src="./IMG/trangchu/slide-ads1.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#"><img src="./IMG/trangchu/slide-ads1.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#"><img src="./IMG/trangchu/slide-ads1.png"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="#"><img src="./IMG/trangchu/slide-ads1.png"></a>
+                    </div>
+                </div>
+            </section>
+            <section class="menu">
+                <div class="section-title menu-title">Thực đơn</div>
+                <div class="menu-list">
+                    <!-- Hamburger -->
+                    <div class="product-cat">
+                        <div class="cat-img">
+                            <a href="thucdon.html" class="cat-link">
+                                <img src="./IMG/trangchu/icon-hamburger.png"> 
+                            </a>
+                        </div>
+                        <div class="cat-title">
+                            <a href="thucdon.html" title="Hamburger">Hamburger</a>
+                        </div>
+                    </div>
+                    <!-- Pizza -->
+                    <div class="product-cat">
+                        <div class="cat-img">
+                            <a href="thucdon.html" class="cat-link">
+                                <img src="./IMG/trangchu/icon-pizza.png"> 
+                            </a>
+                        </div>
+                        <div class="cat-title">
+                            <a href="thucdon.html" title="Pizza">Pizza</a>
+                        </div>
+                    </div>
+                    <!-- Chicken -->
+                    <div class="product-cat">
+                        <div class="cat-img">
+                            <a href="thucdon.html" class="cat-link">
+                                <img src="./IMG/trangchu/icon-chicken.png"> 
+                            </a>
+                        </div>
+                        <div class="cat-title">
+                            <a href="thucdon.html" title="Gà rán">Gà rán</a>
+                        </div>
+                    </div>
+                    <!-- Banh mi VN -->
+                    <div class="product-cat">
+                        <div class="cat-img">
+                            <a href="thucdon.html" class="cat-link">
+                                <img src="./IMG/trangchu/icon-banhmivn.png"> 
+                            </a>
+                        </div>
+                        <div class="cat-title">
+                            <a href="thucdon.html" title="Bánh mì Việt">Bánh mì Việt</a>
+                        </div>
+                    </div>
+                    <!-- Khoai tay chien -->
+                    <div class="product-cat">
+                        <div class="cat-img">
+                            <a href="thucdon.html" class="cat-link">
+                                <img src="./IMG/trangchu/icon-khoaitaychien.png"> 
+                            </a>
+                        </div>
+                        <div class="cat-title">
+                            <a href="thucdon.html" title="Khoai chiên">Khoai chiên</a>
+                        </div>
+                    </div>
+                    <!-- Do uong -->
+                    <div class="product-cat">
+                        <div class="cat-img">
+                            <a href="thucdon.html" class="cat-link">
+                                <img src="./IMG/trangchu/icon-drink.png"> 
+                            </a>
+                        </div>
+                        <div class="cat-title">
+                            <a href="thucdon.html" title="Đồ uống">Đồ uống</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Đề xuất món ăn hôm nay -->
+            <section class="recommend">
+                <div class="section-title"><h1>Hôm nay ăn gì?</h1></div>
+                <div class="container">
+                    <div class="products">
+                        <div class="row">
+                            <section class="section">
+                                <div class="row">
+                                    <div class="row px-4 mx-auto">
+                                        <!-- San Pham -->
+                                        <div class="col-lg mx-auto">
+                                            <div class="card" data-sp="sp001"></div>     
+                                        </div>
+                                        <!-- San Pham -->
+                                        <div class="col-lg mx-auto">
+                                            <div class="card" data-sp="sp002"></div>     
+                                        </div>                            
+                                        <!-- San Pham -->
+                                        <div class="col-lg mx-auto">
+                                            <div class="card" data-sp="sp004"></div>     
+                                        </div>
+                                        <!-- San Pham -->
+                                        <div class="col-lg mx-auto">
+                                            <div class="card" data-sp="sp005"></div>     
+                                        </div>
+                                        <!-- San Pham -->
+                                        <div class="col-lg mx-auto">
+                                            <div class="card" data-sp="sp010"></div>     
+                                        </div>
+                                        <!-- San Pham -->
+                                        <div class="col-lg mx-auto">
+                                            <div class="card" data-sp="sp011"></div>     
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <!-- Chương trình khuyến mãi -->
+            <section class="promotions">
+                <div class="section-title"><h1>Chương trình khuyến mãi</h1></div>
+                <div class="all-sale">
+                    <div class="sale">
+                        <a href="#!"><img src="./IMG/trangchu/sale1.png"></a>
+                    </div>
+                    <div class="sale">
+                        <a href="#!"><img src="./IMG/trangchu/sale2.png"></a>
+                    </div>
+                    <div class="sale">
+                        <a href="#!"><img src="./IMG/trangchu/sale3.png"></a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="ctn">
+            <div class="footer">
+                <div class="footer__left">
+                    <ul>
+                        <li><a href="#!"><p>Trang Chủ</p></a></li>
+                        <li><a href="#!"><p>Giới Thiệu</p></a></li>
+                        <li><a href="#!"><p>Thực Đơn</p></a></li>
+                        <li><a href="#!"><p>Tin Tức</p></a></li>
+                        <li><a href="#!"><p>Tuyển Dụng</p></a></li>
+                        <li><a href="#!"><p>Liên Hệ</p></a></li>
+                        <li><a href="#!"><p>Giải Quyết Khiếu Nại</p></a></li>
+                        <li><a href="#!"><p>Bảo Mật Thông Tin</p></a></li>
+                    </ul>
+                </div>
+                <div class="footer__center">
+                    <img src="./IMG/logo.png" alt="Logo" width="250px" style="margin: -40px 0;">
+                    <p>© 2021 Fun Food</p>
+                    <div class="socical-icon">
+                        <a href="#!"><img src="./IMG/fb.png" alt=""></a>
+                        <a href="#!"><img src="./IMG/intar.png" alt=""></a>
+                        <a href="#!"><img src="./IMG/tw.png" alt=""></a>
+                        <a href="#!"><img src="./IMG/linker.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <ul>
+                        <li><p>Địa Chỉ Nhà Hàng</p></li>
+                        <li><p>Nhà hàng Fun Food lầu G,</p></li>
+                        <li><p>Tòa nhà Jabes 1, số 123</p></li>
+                        <li><p>đường 3 tháng 2, Cần Thơ</p></li>
+                        <li><p>Giấy CN ĐKDN số 2323232</p></li>
+                        <li><p>do sở kế hoạch và đầu tư Cần Thơ</p></li>
+                        <li><p>cấp 1/1/2021</p></li>
+                        <li><p>Email: info@funfood.vn</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    
+    <script src="JS/listSanPham.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/trangchu.js"></script>
+    <script src="JS/thucdon.js"></script>
+</body>
+</html>

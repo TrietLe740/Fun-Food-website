@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Roboto+Slab:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/giohang.css">
+    <title>Giỏ Hàng</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./IMG/logo.ico">
+</head>
+<body class="parallax preloading">
+    <div class="preloader">
+	    <img src="./IMG/loader.gif">
+    </div>
+    <!-- Toast  -->
+    <div class="toast-container"></div>
+    <header>
+        <div class="ctn">
+            <a id="top" href="trangchu.html"><img class="logo" src="./IMG/logo.png" alt="logo"></a>
+            <nav class="nav-bar">
+                <a href="trangchu.html">Trang chủ</a>
+                <a href="gioithieu.html">Giới thiệu</a>
+                <a href="thucdon.html">Thực đơn</a>
+                <a href="tintuc.html">Tin tức</a>
+                <a href="tuyendung.html">Tuyển dụng</a>
+                <a href="lienhe.html">Liên hệ</a>
+            </nav>
+            <img id="order-now-img" width="250px" src="./IMG/delivery.png">
+            <div class="search-container">
+                <form method="GET" action="timkiem.html" onsubmit="return frmValidate5(this);">
+                    <!-- <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="search"> -->
+                    <a href="#" class="sc-btn"><i class="header-fas fas fa-search"></i></a>
+                    <a href="#" class="sc-btn"><i class="header-fas fas fa-user"></i></i></a>
+                    <a href="giohang.html" class="sc-btn"><i class="header-fas fas fa-shopping-cart"></i></a>
+            </form>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col" style="width: 45px;"></th>
+                            <th scope="col" style="width: 500px;">Sản Phẩm</th>
+                            <th scope="col">Đơn Giá</th>
+                            <th scope="col">Số Lượng</th>
+                            <th scope="col">Thành Tiền</th>
+                            <th scope="col" class="remove-all-product" style="width: 45px;"><i class="fas fa-trash-alt"></i></th>
+                          </tr>
+                        </thead>
+                        <!-- danh sach -->
+                        <tbody class="bill"></tbody>
+                        <tfoot class="pay"></tfoot>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="ctn">
+            <div class="footer">
+                <div class="footer__left">
+                    <ul>
+                        <li><a href="#!"><p>Trang Chủ</p></a></li>
+                        <li><a href="#!"><p>Giới Thiệu</p></a></li>
+                        <li><a href="#!"><p>Thực Đơn</p></a></li>
+                        <li><a href="#!"><p>Tin Tức</p></a></li>
+                        <li><a href="#!"><p>Tuyển Dụng</p></a></li>
+                        <li><a href="#!"><p>Liên Hệ</p></a></li>
+                        <li><a href="#!"><p>Giải Quyết Khiếu Nại</p></a></li>
+                        <li><a href="#!"><p>Bảo Mật Thông Tin</p></a></li>
+                    </ul>
+                </div>
+                <div class="footer__center">
+                    <img src="./IMG/logo.png" alt="Logo" width="250px" style="margin: -40px 0;">
+                    <p>© 2021 Fun Food</p>
+                    <div class="socical-icon">
+                        <a href="#!"><img src="./IMG/fb.png" alt=""></a>
+                        <a href="#!"><img src="./IMG/intar.png" alt=""></a>
+                        <a href="#!"><img src="./IMG/tw.png" alt=""></a>
+                        <a href="#!"><img src="./IMG/linker.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <ul>
+                        <li><p>Địa Chỉ Nhà Hàng</p></li>
+                        <li><p>Nhà hàng Fun Food lầu G,</p></li>
+                        <li><p>Tòa nhà Jabes 1, số 123</p></li>
+                        <li><p>đường 3 tháng 2, Cần Thơ</p></li>
+                        <li><p>Giấy CN ĐKDN số 2323232</p></li>
+                        <li><p>do sở kế hoạch và đầu tư Cần Thơ</p></li>
+                        <li><p>cấp 1/1/2021</p></li>
+                        <li><p>Email: info@funfood.vn</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./JS/listSanPham.js"></script>
+    <script src="./JS/main.js"></script>
+    <script src="./JS/giohang.js"></script>
+</body>
+</html>
