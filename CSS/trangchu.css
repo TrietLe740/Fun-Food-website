@@ -9,8 +9,8 @@ article.main-contain {
 }
 
 /*Phần quảng cáo chính - trang chủ*/ 
-section .special-ads-slider {
-    height: 700px;
+.slide img {
+    width: 100%;
 }
 
 .slick-dots {
@@ -39,7 +39,6 @@ section .special-ads-slider {
 
 /* Phần menu mini cho trang chủ */
 section.menu {
-    height: 200px;
     background-color: white;
 }
 
@@ -60,6 +59,7 @@ section.menu {
     text-align: center;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .product-cat {
@@ -68,7 +68,7 @@ section.menu {
 }
 
 .cat-img a img {
-    width: 100px;
+    max-width: 100px;
 }
 
 .cat-title a {
@@ -92,7 +92,7 @@ section .recommend {
     margin: 0;
 }
 
-/* Bootstrap */
+/* Chỉnh lại thông số Bootstrap theo ý muốn */
 body {
     position: relative;
     max-width: none;
@@ -338,17 +338,29 @@ section.promotions {
 
 .sale {
     width: 30%;
-    margin-bottom: 50px;
+    margin: 0 10px 50px 10px;
 }
 
 .sale img {
-    width: 300px;
-    border: black 1px solid;
+    width: 95%;
+    box-shadow: 6px 6px 15px #bbb;
 }
 
 .sale img:hover {
     border-color: #ccc;
-    box-shadow: 0 2px 3px 0 #00000049;
-    width: 320px;
+    transform: scale(100%);
+    box-shadow: 6px 6px 15px #bbb;
     margin-bottom: -20px;
+    width: 100%;
+}
+
+/* Responsive style Desktop first*/
+@media screen and (max-width: 767px) {
+    .slick-dots {
+        bottom: 5px;
+    }
+    .slick-dots button {
+        width: 5px;
+        height: 5px;
+    }
 }

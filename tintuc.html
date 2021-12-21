@@ -19,35 +19,38 @@
     <script src="https://kit.fontawesome.com/602456e303.js" crossorigin="anonymous"></script>    
 </head>
 <body class="parallax preloading">
+    <!-- Loading Effect Jquery -->
     <div class="preloader">
 	    <img src="./IMG/loader.gif">
     </div>
+    <!-- Header -->
     <header>
-        <div class="ctn">
-            <a id="top" href="trangchu.html"><img class="logo" src="./IMG/logo.png" alt="logo"></a>
-            <nav class="nav-bar">
-                <a href="trangchu.html">Trang chủ</a>
-                <a href="gioithieu.html">Giới thiệu</a>
-                <a href="thucdon.html">Thực đơn</a>
-                <a href="tintuc.html">Tin tức</a>
-                <a href="tuyendung.html">Tuyển dụng</a>
-                <a href="lienhe.html">Liên hệ</a>
-            </nav>
+        <nav>
+            <div class="logo">
+                <a id="top" href="trangchu.html"><img src="./IMG/logo.png" alt="logo"></a>
+            </div>
+                <ul>
+                    <li><a class="active" href="trangchu.html">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="thucdon.html">Thực đơn</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
             <img id="order-now-img" width="250px" src="./IMG/delivery.png">
             <div class="search-container">
-                <form method="GET" action="timkiem.html" onsubmit="return frmValidate5(this);">
-                    <!-- <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="search"> -->
-                    <a href="#" class="sc-btn"><i class="header-fas fas fa-search"></i></a>
-                    <a href="#" class="sc-btn"><i class="header-fas fas fa-user"></i></i></a>
-                    <a href="giohang.html" class="sc-btn"><i class="header-fas fas fa-shopping-cart"></i></a>
-                </form>
+                <a href="#" class="sc-btn"><i class="header-fas fas fa-search"></i></a>
+                <a href="#" class="sc-btn"><i class="header-fas fas fa-user"></i></i></a>
+                <a href="giohang.html" class="sc-btn"><i class="header-fas fas fa-shopping-cart"></i></a>
             </div>
-        </div>
+        </nav>
     </header>
+    <!-- Main -->
     <main>
         <div class="main-title">
             <h1>TIN TỨC</h1>
         </div>
+        <!-- Bootstrap -->
         <div class="container news">
             <!-- Row 1  -->
             <div class="row">
@@ -120,8 +123,9 @@
             </div>
         </div>
     </main>
+    <!-- Footer -->
     <footer>
-        <div class="ctn">
+        <div class="ftn">
             <div class="footer">
                 <div class="footer__left">
                     <ul>

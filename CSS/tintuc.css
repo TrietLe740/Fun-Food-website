@@ -6,17 +6,13 @@
     padding: 20px;
 }
 
-.col {
-    margin-top: 18px;
-}
-
 /* Main Tin Tức */
 .main-title {
     margin: 0 auto;
-    max-width: 1200px;
-    height: 250px;
-    background-image: url(/IMG/foodbg.png);
+    width: 100%;
+    background-image: url(../IMG/foodbg.png);
     background-size: cover;
+    background-position: center;
     margin-bottom: 5px;
 }
 
@@ -80,4 +76,11 @@
 .sale-news img {
     max-width: 100%;
     border-radius: 10px;
+}
+
+/* Responsive Tin tức */
+@media screen and (max-width: 1080px) {
+    .row {
+        flex-direction: column
+    }
 }

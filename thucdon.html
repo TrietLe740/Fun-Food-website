@@ -15,30 +15,31 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./IMG/logo.ico">
 </head>
 <body class="parallax preloading">
+    <!-- Loading Effect Jquery -->
     <div class="preloader">
 	    <img src="./IMG/loader.gif">
     </div>
+    <!-- Header -->
     <header>
-        <div class="ctn">
-            <a id="top" href="trangchu.html"><img class="logo" src="./IMG/logo.png" alt="logo"></a>
-            <nav class="nav-bar">
-                <a href="trangchu.html">Trang chủ</a>
-                <a href="gioithieu.html">Giới thiệu</a>
-                <a href="thucdon.html">Thực đơn</a>
-                <a href="tintuc.html">Tin tức</a>
-                <a href="tuyendung.html">Tuyển dụng</a>
-                <a href="lienhe.html">Liên hệ</a>
-            </nav>
+        <nav>
+            <div class="logo">
+                <a id="top" href="trangchu.html"><img src="./IMG/logo.png" alt="logo"></a>
+            </div>
+                <ul>
+                    <li><a class="active" href="trangchu.html">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="thucdon.html">Thực đơn</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
             <img id="order-now-img" width="250px" src="./IMG/delivery.png">
             <div class="search-container">
-                <form method="GET" action="timkiem.html" onsubmit="return frmValidate5(this);">
-                    <!-- <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="search"> -->
-                    <a href="#" class="sc-btn"><i class="header-fas fas fa-search"></i></a>
-                    <a href="#" class="sc-btn"><i class="header-fas fas fa-user"></i></i></a>
-                    <a href="./giohang.html" class="sc-btn"><i class="header-fas fas fa-shopping-cart"></i></a>
-            </form>
-        </div>
-        </div>
+                <a href="#" class="sc-btn"><i class="header-fas fas fa-search"></i></a>
+                <a href="#" class="sc-btn"><i class="header-fas fas fa-user"></i></i></a>
+                <a href="giohang.html" class="sc-btn"><i class="header-fas fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
     </header>
         <!-- Toast  -->
         <div class="toast-container"></div>
@@ -54,7 +55,7 @@
                 </div>
             </div>
         </div>
-
+    <!-- Main -->
     <main>
         <div class="container">
             <div class="products">
@@ -71,10 +72,18 @@
                                         <div class="col-lg mx-auto">
                                             <div class="card" data-sp="sp001"></div>     
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="row px-4 mx-auto">
                                         <!-- San Pham -->
                                         <div class="col-lg mx-auto">
                                             <div class="card" data-sp="sp008"></div>     
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="row px-4 mx-auto">
                                         <!-- San Pham -->
                                         <div class="col-lg mx-auto">
                                             <div class="card" data-sp="sp002"></div>     
@@ -87,10 +96,18 @@
                                         <div class="col-lg mx-auto">
                                             <div class="card" data-sp="sp007"></div>     
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="row px-4 mx-auto">
                                         <!-- San Pham -->
                                         <div class="col-lg mx-auto">
                                             <div class="card" data-sp="sp005"></div>     
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="row px-4 mx-auto">
                                         <!-- San Pham -->
                                         <div class="col-lg mx-auto">
                                             <div class="card" data-sp="sp011"></div>     
@@ -177,9 +194,9 @@
 
 
     </main>
-
+    <!-- Footer -->
     <footer>
-        <div class="ctn">
+        <div class="ftn">
             <div class="footer">
                 <div class="footer__left">
                     <ul>

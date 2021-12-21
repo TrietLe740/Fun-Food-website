@@ -55,7 +55,7 @@ header {
     box-shadow: 0 2px 3px 0 #00000049;
 }
 
-.logo {
+.logo a img {
     width: 100px;
     float: left;
 }
@@ -66,14 +66,39 @@ nav, div.search-container {
 }
 
 nav {
-    text-align: center;
-    float: left;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
 }
 
-nav a {
-    margin-left: 12px;
-    font-weight: bold;
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
     color: black;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 12px;
+}
+
+nav .menu-btn i {
+    cursor: pointer;
+    display: none;
+    font-size: 22px;
+}
+
+input[type="checkbox"] {
+    display: none;
 }
 
 nav a:hover {
@@ -131,6 +156,7 @@ div.search-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
 }
 
 .footer .socical-icon img{
@@ -141,4 +167,40 @@ div.search-container {
 .footer__right {
     width: 400px;
     text-align: right;
+}
+
+/* Responsive Header Footer*/
+@media screen and (max-width: 767px) {
+    .logo a img {
+        width: 50px;
+    }
+    nav ul li a {
+        font-size: 10px;
+        margin: 0;
+    }
+    .sc-btn {
+        border: solid 1px black;
+        border-radius: 10%;
+        padding: 1px 3px;
+        width: 3px;
+    }
+    /* Đang ở trang nào thì biến mất nút trang đó */
+    .active {
+        display: none;
+    }
+    .footer__left, .footer__right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #order-now-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #order-now-img {
+        max-width: 180px;
+    }
 }

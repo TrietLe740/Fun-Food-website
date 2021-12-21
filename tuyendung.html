@@ -17,31 +17,33 @@
     <script src="https://kit.fontawesome.com/602456e303.js" crossorigin="anonymous"></script>  
 </head>
 <body class="parallax preloading">
+    <!-- Loading Effect Jquery -->
     <div class="preloader">
 	    <img src="./IMG/loader.gif">
     </div>
+    <!-- Header -->
     <header>
-        <div class="ctn">
-            <a id="top" href="trangchu.html"><img class="logo" src="./IMG/logo.png" alt="logo"></a>
-            <nav class="nav-bar">
-                <a class="nav-link" href="trangchu.html">Trang chủ</a>
-                <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
-                <a class="nav-link" href="thucdon.html">Thực đơn</a>
-                <a class="nav-link" href="tintuc.html">Tin tức</a>
-                <a class="nav-link" href="tuyendung.html">Tuyển dụng</a>
-                <a class="nav-link" href="lienhe.html">Liên hệ</a>
-            </nav>
+        <nav>
+            <div class="logo">
+                <a id="top" href="trangchu.html"><img src="./IMG/logo.png" alt="logo"></a>
+            </div>
+                <ul>
+                    <li><a class="active" href="trangchu.html">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="thucdon.html">Thực đơn</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
             <img id="order-now-img" width="250px" src="./IMG/delivery.png">
             <div class="search-container">
-                <form method="GET" action="timkiem.html" onsubmit="return frmValidate5(this);">
-                    <!-- <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="search"> -->
-                    <a href="#" class="sc-btn"><i class="header-fas fas fa-search"></i></a>
-                    <a href="#" class="sc-btn"><i class="header-fas fas fa-user"></i></i></a>
-                    <a href="giohang.html" class="sc-btn"><i class="header-fas fas fa-shopping-cart"></i></a>
-                </form>
+                <a href="#" class="sc-btn"><i class="header-fas fas fa-search"></i></a>
+                <a href="#" class="sc-btn"><i class="header-fas fas fa-user"></i></i></a>
+                <a href="giohang.html" class="sc-btn"><i class="header-fas fas fa-shopping-cart"></i></a>
             </div>
-        </div>
+        </nav>
     </header>
+    <!-- Main -->
     <main>
         <div class="main-header">
             <img src="./IMG/tuyendung/tuyendungbg.png">
@@ -60,20 +62,21 @@
             <p>
                 Hãy nắm bắt ngay cơ hội để tạo dựng cho mình nghề nghiệp vững chắc tại Fun Food nhé!
             </p>
+            <!-- Form xin việc -->
             <div class="frm-apply">
                 <h3>ĐƠN XIN VIỆC</h3>
-                <form name="frmApply" method="GET" enctype="application/x-www-form-urlencoded"  onsubmit="return frmTest(this);">
+                <form name="frmApply" onsubmit="return frmTest(this)">
                     <label for="name">Tên đầy đủ <span class="red">*</span></label>
-                    <input type="text" id="name" name="name" placeholder="Tên của bạn" required>
+                    <input type="text" id="name" name="name" placeholder="Tên của bạn" >
 
                     <label for="email">Email <span class="red">*</span></label>
-                    <input type="text" id="email" name="email" placeholder="Email" required>
+                    <input type="text" id="email" name="email" placeholder="Email" >
 
                     <label for="phone">Số điện thoại <span class="red">*</span></label>
-                    <input type="number" id="phone" name="phone" placeholder="Số điện thoại của bạn" required>
-
+                    <input type="number" id="phone" name="phone" placeholder="Số điện thoại của bạn" >
+					<!-- Chức năng khi chọn 1 tỉnh thành sẽ cho các lựa chọn nơi làm việc -->
                     <label for="country">Chọn tỉnh thành làm việc <span class="red">*</span></label>
-                    <select id="country" name="country" onchange="chooseWorkPlace(this.id, 'workplace')">
+                    <select id="country" name="country" onchange="chooseWorkPlace(this.id, 'workplace')" required>
                         <option value="">-- Chọn tỉnh thành --</option>
                         <option value="hn">Hà Nội</option>
                         <option value="hp">Hải Phòng</option>
@@ -86,7 +89,7 @@
                     </select>
 
                     <label for="workplace">Chọn nơi ứng tuyển <span class="red">*</span></label>
-                    <select id="workplace" name="workplace" required></select>
+                    <select id="workplace" name="workplace"></select>
 
                     <label for="uploadcv">CV của bạn <span class="red">*</span></label>
                     <div class="uploadcv">
@@ -97,7 +100,6 @@
                             application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, 
                             application/vnd.ms-excel, application/vnd.ms-powerpoint,
                             text/plain, application/pdf, image/*"
-                            required
                         >								
                         <div class="more">
                             Nhấp để chọn &amp; tải lên CV của bạn
@@ -111,17 +113,18 @@
             </div>
         </div>
     </main>
+    <!-- Footer -->
     <footer>
-        <div class="ctn">
+        <div class="ftn">
             <div class="footer">
                 <div class="footer__left">
                     <ul>
-                        <li><a href="#!"><p>Trang Chủ</p></a></li>
-                        <li><a href="#!"><p>Giới Thiệu</p></a></li>
-                        <li><a href="#!"><p>Thực Đơn</p></a></li>
-                        <li><a href="#!"><p>Tin Tức</p></a></li>
-                        <li><a href="#!"><p>Tuyển Dụng</p></a></li>
-                        <li><a href="#!"><p>Liên Hệ</p></a></li>
+                        <li><a href="trangchu.html"><p>Trang Chủ</p></a></li>
+                        <li><a href="gioithieu.html"><p>Giới Thiệu</p></a></li>
+                        <li><a href="thucdon.html"><p>Thực Đơn</p></a></li>
+                        <li><a href="tintuc.html"><p>Tin Tức</p></a></li>
+                        <li><a href="tuyendung.html"><p>Tuyển Dụng</p></a></li>
+                        <li><a href="lienhe.html"><p>Liên Hệ</p></a></li>
                         <li><a href="#!"><p>Giải Quyết Khiếu Nại</p></a></li>
                         <li><a href="#!"><p>Bảo Mật Thông Tin</p></a></li>
                     </ul>

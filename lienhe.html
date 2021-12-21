@@ -18,32 +18,33 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./IMG/logo.ico">
 </head>
 <body class="parallax preloading">
+    <!-- Loading Effect Jquery -->
     <div class="preloader">
 	    <img src="./IMG/loader.gif">
     </div>
     <header>
-        <div class="ctn">
-            <a id="top" href="trangchu.html"><img class="logo" src="./IMG/logo.png" alt="logo"></a>
-            <nav class="nav-bar">
-                <a href="trangchu.html">Trang chủ</a>
-                <a href="gioithieu.html">Giới thiệu</a>
-                <a href="thucdon.html">Thực đơn</a>
-                <a href="tintuc.html">Tin tức</a>
-                <a href="tuyendung.html">Tuyển dụng</a>
-                <a href="lienhe.html">Liên hệ</a>
-            </nav>
+        <nav>
+            <div class="logo">
+                <a id="top" href="trangchu.html"><img src="./IMG/logo.png" alt="logo"></a>
+            </div>
+                <ul>
+                    <li><a class="active" href="trangchu.html">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="thucdon.html">Thực đơn</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
             <img id="order-now-img" width="250px" src="./IMG/delivery.png">
             <div class="search-container">
-                <form method="GET" action="timkiem.html" onsubmit="return frmValidate5(this);">
-                    <!-- <input id="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="search"> -->
-                    <a href="#" class="sc-btn"><i class="header-fas fas fa-search"></i></a>
-                    <a href="#" class="sc-btn"><i class="header-fas fas fa-user"></i></i></a>
-                    <a href="giohang.html" class="sc-btn"><i class="header-fas fas fa-shopping-cart"></i></a>
-            </form>
-        </div>
-        </div>
+                <a href="#" class="sc-btn"><i class="header-fas fas fa-search"></i></a>
+                <a href="#" class="sc-btn"><i class="header-fas fas fa-user"></i></i></a>
+                <a href="giohang.html" class="sc-btn"><i class="header-fas fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
     </header>
     <main>
+        <!-- Bootstrap -->
         <div class="container">
             <div class="row">
                 <img src="./IMG/lienhe/lienhe_1.jpg" alt="" width="100%">
@@ -87,15 +88,15 @@
                                             <div class="form-row mb-4">
                                               <div class="col">
                                                 <!-- Last name -->
-                                                <input type="text" id="defaultRegisterFormLastName" class="form-control" name="lname" placeholder="Họ" required>
+                                                <input type="text" id="defaultRegisterFormLastName" class="form-control" name="lname" placeholder="Họ" >
                                               </div>
                                               <div class="col">
                                                 <!-- First name -->
-                                                <input type="text" id="defaultRegisterFormFirstName" class="form-control" name="name" placeholder="Tên" required>
+                                                <input type="text" id="defaultRegisterFormFirstName" class="form-control" name="name" placeholder="Tên" >
                                               </div>
                                             </div>
                                             <!-- E-mail -->
-                                            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" name="email" placeholder="E-mail liên hệ" required>
+                                            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" name="email" placeholder="E-mail liên hệ" >
                                             
                                             <!-- Phone number -->
                                             <input type="text" id="defaultRegisterPhonePassword" class="form-control" name="phone" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
@@ -131,7 +132,7 @@
         </div>
     </main>
     <footer>
-        <div class="ctn">
+        <div class="ftn">
             <div class="footer">
                 <div class="footer__left">
                     <ul>
